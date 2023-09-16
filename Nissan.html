@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/image.png" type="image/x-icon" />
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <title>AutoWIKI</title>
+<style>
+.textcols {
+	overflow: hidden;
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
+    height: 300%;
+}
+.textcols-item {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+    font-family: "Arial", Sans-serif;
+    color: rgb(228, 223, 135);
+}
+.textcols .textcols-item:last-child {
+	margin-right: 0;
+}
+
+</style>
+</head>
+<body style="background-color: rgb(79, 94, 105)">
+    <div>
+        <h1 class="header">Выберете о каком автомобиле вы хотите узнать подробнее.</h1>
+    </div>
+    <div class="sidenav">
+        <a href="auto.html">Главная страница</a>
+        <a href="Toyota.html">Toyota</a>
+        <a href="BMW.html">BMW</a>
+        <a href="Mercedes.html">Mercedes</a>
+    </div>
+    <div class="textcols">
+        <div class="textcols-item">
+            <img src="image/GTR.png" width="300">
+            <h2>GT-R (R34)</h2>
+            <p>Годы производства - 1999-2002</p>
+            <p>Тип кузова - Купе</p>
+            <p>Массогабаритные характеристики:</p>
+            <p>Длина - 4445 мм</p>
+            <p>Ширина - 1695 мм</p>
+            <p>Высота - 1285 мм</p>
+            <p>Масса - 1200-1450 кг</p>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+              <div id="myDropdown" class="dropdown-content">
+                <p>Длина - 4445 мм</p>
+                <p>Ширина - 1695 мм</p>
+                <p>Высота - 1285 мм</p>
+              </div>
+            </div>
+            <p>Произведено - !</p>
+        </div>
+        <div class="textcols-item">
+            <img src="image/Silvia.png" width="300">
+            <h2>Silvia 15-S</h2>
+            <p>Годы производства - 1999-2002</p>
+            <p>Тип кузова - Купе</p>
+            <p>Колёсная формула - 4*4</p>
+            <p>Двигатель - 4.Цилиндровый : 2,0 л SR20DE+T + турбо</p>
+            <p>Трансмиссия - 5/6-ст. Механическая GETRAG ТАКЖЕ 4-ст. автоматическая</p>
+            <p>Объём бака - !</p>
+            <p>Массогабаритные характеристики:</p>
+            <p>-Длина - 4445 мм</p>
+            <p>-Ширина - 1695 мм</p>
+            <p>-Высота - 1285 мм</p>
+            <p>-Масса - 1200-1450 кг</p>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <p>Длина - 4445 мм</p>
+                  <p>Ширина - 1695 мм</p>
+                  <p>Высота - 1285 мм</p>
+                </div>
+              </div>
+            <p>Произведено - !</p>
+        </div>
+        <div class="textcols-item">
+            <img src="image/X-Trail.png" width="300" >
+            <h2>Nissan X-Trail</h2>
+            <p>Годы производства - 2001 - настоящее время</p>
+            <p>Тип кузова - Компактный кроссовер</p>
+            <p>Колёсная формула - 4*4 - 4*2</p>
+            <p>Двигатель - Дизель 1.6л мощ 130 л.с и 2.0-2.5л 144-171 л.с бензиновых Двигателя</p>
+            <p>Трансмиссия - 6 ст. Дизельный двигател с Механической КПП</p>
+            <p>Объём бака - 60Л</p>
+            <p>Массогабаритные характеристики:</p>
+            <p>-Длина - 4640-4690 мм</p>
+            <p>-Ширина - 1820-1830 мм</p>
+            <p>-Высота - 1710-1715 мм</p>
+            <p>-Масса - 1450-1646 кг</p>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <p>Длина - 4445 мм</p>
+                  <p>Ширина - 1695 мм</p>
+                  <p>Высота - 1285 мм</p>
+                </div>
+            </div>
+            <p>Произведено - !</p>
+        </div>
+    </div>
+    <script>
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+      
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+</body>
+</html
